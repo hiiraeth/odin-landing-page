@@ -1,7 +1,9 @@
 # odin-landing-page
 Landing page project from The Odin Project: https://www.theodinproject.com/lessons/foundations-landing-page
 
-Photo Sources:
+Practice for developing HTML and CSS skills, utilizing Flexbox.
+
+## Photo Sources:
 
 Stardew Valley image: https://en.wikipedia.org/wiki/Stardew_Valley
 
