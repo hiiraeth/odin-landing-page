@@ -1,5 +1,6 @@
 * {
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,32 +12,32 @@ li {
     list-style: none;
 }
 
-ul a {
-    text-decoration: none;
-    color: black;
+ul {
     background-color: #152937;
+}
+
+a {
+    text-decoration: none;
     color: #F9FAF8;
 }
 
-button {
-    padding: 15px 35px;
-    background-color: #0e85db;
-    color: white;
-    border-radius: 30px;
-    border: 0;
-}
 
-button:hover,
-button:hover::after {
-    background-color: #085084;
-    transition: 0.2s;
+.right-two h2,
+.sec-three h2,
+.sec-four h2,
+.left h1 {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 80px;
+    color: #FFDDE2;
 }
 
 .head {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     background-color: #152937;
     max-width: 100%;
+    height: 75px;
 }
 
 .header {
@@ -45,10 +46,13 @@ button:hover::after {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin: 0px 150px 0px 150px;
+    padding: 0px;
+    margin: 0px 100px 0px 100px;
     background-color: #152937;
     color: #F9FAF8;
+    position: sticky;
+    top: o;
+    z-index: 100;
 }
 
 .navigation ul {
@@ -61,11 +65,15 @@ button:hover::after {
     color: #F9FAF8;
 }
 
+/* SECTION ONE */
+
 .sec-one {
     display: flex;
     flex-wrap: wrap;
-    background-color: #152937;
-    color: #F9FAF8;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6f5e76;
+    color: #EFD6D2;
 }
 
 .logo {
@@ -74,31 +82,32 @@ button:hover::after {
     background-color: #152937;
 }
 
-.link {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .right {
     display: flex;
     flex: 1;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .left {
+    display: flex;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
     padding: 40px;
-    flex: 1;
-    text-align: right;
+    text-align: center;
     margin-bottom: 30px;
 }
 
+.sec-one-text {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
 .left h1 {
-    box-sizing: border-box;
-    font-family: Bebas Neue, sans-serif;
-    text-align: right;
-    font-size: 80px;
+    text-align: center;
     margin-bottom: 0;
 }
 
@@ -106,5 +115,157 @@ button:hover::after {
     border-radius: 50%;
     height: 200px;
     width: auto;
-    border: 10px solid #0e85db
+    border: 10px solid #EFD6D2;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 35px;
+    background-color: #481E14;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+}
+
+button:hover {
+    background-color: #F2613F;
+    transition: 0.2s;
+}
+
+/* SECTION TWO */
+
+.sec-two {
+    display: flex;
+    height: 360px;
+    width: 100%;
+    flex-wrap: nowrap;
+    background-color: #152937;
+    color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-two {
+    flex: 1 1 50px;
+    text-align: right;
+    padding: 0px 30px 0px 30px;
+    font-size: 25px;
+    font-style:italic;
+    min-width: 250px;
+}
+
+.right-two {
+    flex: 1;
+    min-width: 250px;
+    margin-top: 15px;
+}
+
+/* SECTION THREE */
+
+.sec-three {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F5E76;
+}
+
+.game-img {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: auto;
+    flex: 1 0 1;
+    border: 5px solid #FFDDE2
+}
+
+.game-img:hover {
+    height: 270px;
+    width: auto;
+    transition: all 1s;
+}
+
+.game-img:not(:hover) {
+    transition: all 1s;
+}
+.game {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.game-text {
+    font-family: Bebas Neue, sans-serif;
+    font-size: 30px;
+    margin-top: 8px;
+    color: #FFDDE2;
+}
+
+.game,
+.game-text {
+    margin-bottom: 50px
+}
+
+.sec-three h2,
+.sec-four h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+/* SECTION FOUR */
+
+.sec-four {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #152937;
+}
+
+.sec-four h2 {
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    height: auto;
+    width: 100px;
+}
+
+.github,
+.discord {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.discord {
+    color: white;
+}
+
+.logo-text {
+    font-size: 40px;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50px;
+    background-color: #6F5E76;
+    color:#EFD6D2;
+    justify-content: center;
+    align-items: center;
 }
